@@ -1,0 +1,159 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/theme.json",
+    "version": 2,
+    "title": "Tacos",
+    "settings": {
+        "useRootPaddingAwareAlignments": true,
+        "appearanceTools": true,
+        "color": {
+            "palette": [
+                {
+                    "slug": "background",
+                    "color": "#E9642E",
+                    "name": "Background"
+                },
+                {
+                    "slug": "contrast",
+                    "color": "#FFFFFF",
+                    "name": "Contrast"
+                },
+                {
+                    "slug": "grey",
+                    "color": "#D9D9D9",
+                    "name": "Grey"
+                }
+            ]
+        },
+        "typography": {
+            "dropCap": false,
+            "fluid": true,
+            "fontFamilies": [
+                {
+                    "fontFace": [
+                        {
+                            "fontFamily": "Edingu",
+                            "fontStretch": "normal",
+                            "fontStyle": "normal",
+                            "fontWeight": "400",
+                            "src": [
+                                "file:./assets/fonts/Edingu.woff2"
+                            ]
+                        }
+                    ],
+                    "fontFamily": "\"Edingu\", serif",
+                    "name": "Edingu",
+                    "slug": "headings"
+                }
+            ],
+            "fontSizes": [
+                {
+                    "fluid": {
+                        "max": "1rem",
+                        "min": "0.875rem"
+                    },
+                    "name": "Small",
+                    "slug": "small",
+                    "size": "1rem"
+                },
+                {
+                    "fluid": {
+                        "max": "1.125rem",
+                        "min": "1rem"
+                    },
+                    "name": "Medium",
+                    "slug": "medium",
+                    "size": "1.125rem"
+                },
+                {
+                    "fluid": {
+                        "max": "1.875rem",
+                        "min": "1.75rem"
+                    },
+                    "name": "Large",
+                    "slug": "large",
+                    "size": "1.75rem"
+                },
+                {
+                    "fluid": false,
+                    "size": "2.25rem",
+                    "slug": "x-large"
+                },
+                {
+                    "fluid": {
+                        "max": "10rem",
+                        "min": "4rem"
+                    },
+                    "size": "10rem",
+                    "slug": "xx-large",
+                    "name": "XX Large"
+                }
+            ]
+        }
+    },
+    "styles": {
+        "spacing": {
+            "blockGap": "0px",
+            "padding": {
+                "top": "0",
+                "right": "1rem",
+                "bottom": "0",
+                "left": "1rem"
+            }
+        },
+        "typography": {
+            "fontFamily": "Edingu",
+            "lineHeight": "1.75",
+            "fontSize": "var(--wp--preset--font-size--medium)"
+        },
+        "elements": {
+            "heading": {
+                "typography": {
+                    "fontFamily": "Edingu"
+                }
+            },
+            "paragraph": {
+                "typography": {
+                    "fontSize": "1.125rem",
+                    "lineHeight": "1.406rem"
+                }
+            },
+            "h1": {
+                "typography": {
+                    "fontSize": "6.875rem",
+                    "lineHeight": "6.875rem"
+                }
+            },
+            "h2": {
+                "typography": {
+                    "fontSize": "clamp(1.699rem, 1.5506000000000002rem + 0.7419999999999998vw, 2.441rem)",
+                    "lineHeight": "1.2"
+                }
+            },
+            "h3": {
+                "typography": {
+                    "fontSize": "clamp(1.35rem, 1.2294rem + 0.603vw, 1.953rem)",
+                    "lineHeight": "1.2"
+                }
+            },
+            "h4": {
+                "typography": {
+                    "fontSize": "clamp(1.253rem, 1.1909999999999998rem + 0.31000000000000005vw, 1.563rem)",
+                    "lineHeight": "1.2"
+                }
+            },
+            "h5": {
+                "typography": {
+                    "fontSize": "clamp(1.063rem, 1.0255999999999998rem + 0.18700000000000006vw, 1.25rem)",
+                    "lineHeight": "1.2"
+                }
+            },
+            "h6": {
+                "typography": {
+                    "fontSize": "clamp(1.063rem, 1.0255999999999998rem + 0.18700000000000006vw, 1.25rem)",
+                    "lineHeight": "1.2"
+                }
+            }
+        }
+    }
+}
+

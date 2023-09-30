@@ -18,9 +18,19 @@
                     "name": "Contrast"
                 },
                 {
-                    "slug": "grey",
+                    "slug": "gray",
                     "color": "#D9D9D9",
                     "name": "Grey"
+                },
+                {
+                    "slug": "back-gray",
+                    "color": "#F7F7F7",
+                    "name": "Back Gray"
+                },
+                {
+                    "slug": "star",
+                    "color": "#00ABA1",
+                    "name": "Star"
                 }
             ]
         },
@@ -125,7 +135,7 @@
             },
             "h2": {
                 "typography": {
-                    "fontSize": "clamp(1.699rem, 1.5506000000000002rem + 0.7419999999999998vw, 2.441rem)",
+                    "fontSize": "6rem",
                     "lineHeight": "1.2"
                 }
             },

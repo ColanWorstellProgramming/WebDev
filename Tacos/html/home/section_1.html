@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+
+        /* Section One */
+        .custom-header-font {
+            font-family: 'Edingu', Arial, sans-serif;
+            font-weight: 400;
+            word-wrap: break-word;
+            font-size: 8rem;
+        }
+
+        .custom-desc-font {
+            font-family: 'Edingu', Arial, sans-serif;
+            font-weight: 400;
+            word-wrap: break-word;
+            font-size: 2rem;
+        }
+
+        .header-1 {
+            position: absolute;
+            width: 80%;
+            left: 200px;
+            color: white;
+            line-height: 150px;
+        }
+
+        .desc-1 {
+            position: absolute;
+            width: 80%;
+            color: white;
+            line-height: 35px;
+        }
+
+        .order-now {
+            position: absolute;
+            width: 30%;
+        }
+
+        .taco-display {
+            position: absolute;
+            width: 75%;
+            height: auto;
+            right: 0;
+        }
+
+    </style>
+</head>
+
+<body style="overflow-x: hidden;">
+
+    <!-- Main Content -->
+    <div class="relative mx-0 p-0">
+
+        <!-- Section 1 -->
+        <div class="bg-white mb-4">
+
+            <!-- White Background Image (Container) -->
+            <div class="bg-white w-screen mx-auto bg-cover bg-center h-screen" style="background-image: url('http://tacoshells.local/wp-content/uploads/2023/09/Group-34-2-1024x512.png');">
+
+                <div class="header-1 custom-header-font mt-64 opacity_zero" id="0005">
+                    FRESH TO ORDER<br/>MINI TACO SHELLS
+                    <div class="desc-1 custom-desc-font mt-12">
+                        Pack big flavor in small bites with our handmade mini<br/> taco shells. Step up your menu with this refreshing<br/> new take on a classic.
+                        <div class="order-now mt-12 img_hover">
+                            <a href="/shells">
+                                <img src="http://tacoshells.local/wp-content/uploads/2023/09/CTA-1.png" class="no-drag">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <img class="taco-display mt-64 no-drag" src="http://tacoshells.local/wp-content/uploads/2023/09/1-2.png">
+                </div>
+
+            </div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

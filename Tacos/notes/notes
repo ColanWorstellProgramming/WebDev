@@ -1,0 +1,67 @@
+/*------- Enqueue Scripts ------*/
+
+// Add To Queue
+
+add_action( 'wp_enqueue_scripts', function(){
+    // put wp_enqueue_script(), wp_register_script(), etc... in here
+});
+
+// Enqueue Script Example
+
+wp_enqueue_script( // add script to queue
+    'scripts_in_js', // slug
+    get_stylesheet_directory_uri() . '/path/file.js', // style.css path + js path
+    [], // dependancys, files that need ran first / array
+    '1.0', // version
+    true // load in footer
+);
+
+// Register Script Example
+
+wp_register_script(
+    'scripts_in_js_2', // slug
+    get_stylesheet_directory_uri() . '/path/file.js', // style.css path + js path
+    [], // dependancys, files that need ran first / array
+    '1.0', // version
+    true // load in footer
+);
+
+/*------- Deregister Enqueue Scripts ------*/
+
+add_action( 'wp_enqueue_scripts', function() {
+
+    wp_deregister_script('scripts_in_js');
+
+});
+
+/*------- Localization Enqueue Scripts ------*/
+
+add_action( 'wp_enqueue_scripts', function(){
+
+    wp_register_script(
+        'scripts_in_js_2',
+        get_stylesheet_directory_uri() . '/js/scripts_2.js',
+        [],
+        '1.0',
+        true
+    );
+
+    wp_localize_script(// has to be called after register or enqueue
+        'scripts_in_js_2', // has to have same slug as register call
+        'Obj_1',
+        [
+            'ajax_url' => admin_url('admin-ajax.php'),
+            'name' => 'colan'
+        ]
+    );
+
+    wp_enqueue_script(
+        'scripts_in_js',
+        get_stylesheet_directory_uri() . '/js/scripts.js',
+        ['scripts_in_js_2'],
+        '1.0',
+        true
+    );
+
+});
+

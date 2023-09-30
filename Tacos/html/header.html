@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+
+        .header-flex-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 230px;
+            margin-right: 0;
+        }
+
+        .header-section {
+            width: 50%;
+            margin: auto;
+        }
+
+        .header-my_text_fonts {
+            color: black;
+            font-size: 30px;
+            font-family: Edingu;
+            font-weight: 400;
+            word-wrap: break-word
+        }
+
+        .header-dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .header-others {
+            position: relative;
+            display: inline-block;
+        }
+
+        .header-dropbtn {
+            color: black;
+            padding: 30px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .header-dropdown-content-center :hover {
+            font-weight: 600;
+        }
+        .header-others :hover {
+            font-weight: 600;
+        }
+
+        .header-topnav a {
+            padding: 30px;
+        }
+
+        .header-dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            min-width: 200px;
+            max-height: 70px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            right: 0;
+            text-align: center;
+            height: 300px;
+            overflow-y: auto;
+        }
+
+        .header-dropdown-content a {
+            padding: 12px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .header-dropdown-content a:hover {
+            background-color: #f2f2f2;
+        }
+
+        .header-dropdown:hover .header-dropdown-content {
+            display: block;
+        }
+
+        .header-dropdown-content-center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+</head>
+
+<body style="overflow-x: hidden;">
+
+    <!-- Main Content -->
+    <div class="relative">
+
+        <div class="header-flex-container" style="padding: 60px; background-color: #fff;">
+
+            <!-- Left header Section -->
+            <div class="header-section img_hover" style="margin: auto;">
+                <a href="home">
+                    <img src="http://tacoshells.local/wp-content/uploads/2023/09/logo-horizontal-1-2.png" class="no-drag opacity_zero" id="0001">
+                </a>
+            </div>
+
+            <!-- Right header Section -->
+            <div class="header-section opacity_zero" id="0002" style="margin: auto;">
+                <div style="display: flex; flex-direction: row; justify-content: flex-end; align-items: center;">
+
+                    <div class="header-topnav">
+                        <div class="header-dropdown img_hover">
+                            <button class="header-dropbtn header-my_text_fonts">Our Products</button>
+                            <div class="header-dropdown-content">
+                                <div class="header-dropdown-content-center header-my_text_fonts">
+                                    <a href="/shells">Shells</a>
+                                    <a href="/displays">Displays</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="header-others header-my_text_fonts img_hover">
+                            <a href="/merchandise">Merch</a>
+                            <a href="/about">About</a>
+                            <a href="/contact">Contact</a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

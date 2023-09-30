@@ -12,14 +12,8 @@ if (!function_exists('tacos_styles_and_scripts')) {
         // Enqueue styles
         wp_enqueue_style('tacos-style', get_stylesheet_uri(), array(), wp_get_theme()->get('Version'));
 
-        // Enqueue JavaScript Fade Script
-        wp_enqueue_script('fade-script', get_template_directory_uri() . '/js/fade.js', array('jquery'), null, true);
-
-        // Enqueue JavaScript Fade Left Script
-        wp_enqueue_script('fade_left-script', get_template_directory_uri() . '/js/fade_left.js', array('jquery'), null, true);
-
-        // Enqueue JavaScript Fade Right Script
-        wp_enqueue_script('fade_right-script', get_template_directory_uri() . '/js/fade_right.js', array('jquery'), null, true);
+        // Enqueue JavaScript Master JS Script
+        wp_enqueue_script('script', get_template_directory_uri() . '/js/script.js', array('jquery'), null, true);
 
     }
 }
